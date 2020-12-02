@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  auto-youtube-dl:
+    image: tons/auto-youtube-dl
+    build: .
+    volumes:
+      - ./Downloads:/Downloads
+    environment:
+      DOWNLOAD_DIRECTORY: /Downloads
