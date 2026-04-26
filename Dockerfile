@@ -1,7 +1,7 @@
 FROM alpine:3.21
 ENV HOME=/tmp
 RUN apk --no-cache -U upgrade \
-    && apk --no-cache add python3 py3-pip ffmpeg \
+    && apk --no-cache add python3 py3-pip ffmpeg nodejs \
     && pip3 install --no-cache-dir --break-system-packages yt-dlp
 WORKDIR /app
 COPY ./dl.sh .
