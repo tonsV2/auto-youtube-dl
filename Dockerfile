@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.22
 ENV HOME=/tmp
 RUN apk --no-cache -U upgrade \
     && apk --no-cache add python3 py3-pip ffmpeg deno \

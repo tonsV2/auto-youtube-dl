@@ -1,4 +1,3 @@
-version: "3.3"
 services:
   auto-youtube-dl:
     image: tons/auto-youtube-dl
