@@ -3,6 +3,7 @@ services:
   auto-youtube-dl:
     image: tons/auto-youtube-dl
     build: .
+    user: "1000:1000"
     volumes:
       - ./Downloads:/Downloads
     command: "https://www.youtube.com/playlist?list=PLNiDb1qWsHSG2RpAZPrikxXL3G98eyohH"
